@@ -1,0 +1,4 @@
+deepgram-sdk==3.4.0
+numpy==1.26.4
+openai-whisper==20231117
+python-dotenv==1.0.1
