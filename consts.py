@@ -1,1 +1,1 @@
-audio_file_name = 'sample.mp3'
+file_initials = 'sample'

@@ -1,13 +1,13 @@
 from deepgram import DeepgramClient, PrerecordedOptions, FileSource
 import os
-from consts import audio_file_name
+from consts import file_initials
 
 from dotenv import load_dotenv
 load_dotenv()
 
 DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
 
-with open(audio_file_name, "rb") as file:
+with open(f"{file_initials}.mp3", "rb") as file:
     buffer_data = file.read()
 
 payload: FileSource = {"buffer": buffer_data}
