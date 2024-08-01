@@ -8,7 +8,7 @@ load_dotenv()
 def recognize_from_file():
     speech_config = speechsdk.SpeechConfig(subscription=os.getenv("AZURE_SPEECH_KEY"),
                                            region=os.getenv("AZURE_SPEECH_REGION"))
-    speech_config.speech_recognition_language="en-US"
+    speech_config.speech_recognition_language = "en-US"
 
     audio_config = speechsdk.audio.AudioConfig(filename=f"{file_initials}.wav")
     speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)

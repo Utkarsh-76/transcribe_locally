@@ -3,3 +3,4 @@ numpy==1.26.4
 openai-whisper==20231117
 python-dotenv==1.0.1
 azure-cognitiveservices-speech==1.38.0
+google-cloud-speech==2.27.0
